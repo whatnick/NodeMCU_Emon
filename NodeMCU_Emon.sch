@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10762,16 +10762,17 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="U$4" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="J3" library="Seeed-OPL-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(10P-2.54)" device="" value="10p-2.54"/>
 <part name="J5" library="Seeed-OPL-Connector" deviceset="CONN-POWER-JACK-2.1MM(DC-005)" device="" value="DC-005"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="22K"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="100K"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="330R"/>
 <part name="X1" library="adafruit" deviceset="STEREOJACK" device=""/>
 <part name="C1" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="10uF"/>
-<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="10uF"/>
-<part name="IC1" library="adafruit" deviceset="78*" device="T" technology="05"/>
+<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="100uF"/>
+<part name="IC1-D24V5F5" library="adafruit" deviceset="78*" device="T" technology="05"/>
 <part name="B1" library="rectifier" deviceset="B-DIL" device=""/>
 <part name="U$1" library="Power or GND " deviceset="GND_POWER" device=""/>
 <part name="J4" library="Seeed-OPL-Connector" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
+<part name="R5" library="resistor" deviceset="R-EU_" device="0204/7" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -10807,10 +10808,11 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <instance part="X1" gate="1" x="215.9" y="130.81"/>
 <instance part="C1" gate="G$1" x="157.48" y="104.14"/>
 <instance part="C2" gate="G$1" x="124.46" y="104.14"/>
-<instance part="IC1" gate="A1" x="142.24" y="109.22" rot="MR0"/>
+<instance part="IC1-D24V5F5" gate="A1" x="142.24" y="109.22" rot="MR0"/>
 <instance part="B1" gate="1" x="177.8" y="104.14" rot="R180"/>
 <instance part="U$1" gate="G$1" x="146.05" y="93.98"/>
 <instance part="J4" gate="G$1" x="157.48" y="160.02" rot="R90"/>
+<instance part="R5" gate="G$1" x="135.89" y="147.828" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -10889,7 +10891,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="124.46" y1="99.06" x2="124.46" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="A1" pin="GND"/>
+<pinref part="IC1-D24V5F5" gate="A1" pin="GND"/>
 <wire x1="142.24" y1="93.98" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="B1" gate="1" pin="-"/>
 <wire x1="182.88" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
@@ -10908,11 +10910,6 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <label x="118.11" y="146.05" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="2"/>
 <wire x1="118.11" y1="153.67" x2="118.11" y2="146.05" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="135.89" y="148.59" size="1.778" layer="95" rot="R270" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="9"/>
-<wire x1="135.89" y1="153.67" x2="135.89" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="4"/>
@@ -10938,7 +10935,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <junction x="50.8" y="102.87"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A1" pin="VO"/>
+<pinref part="IC1-D24V5F5" gate="A1" pin="VO"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="132.08" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="109.22" x2="124.46" y2="106.68" width="0.1524" layer="91"/>
@@ -11165,7 +11162,7 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="74.93" y1="40.64" x2="74.93" y2="41.91" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="1">
+<net name="V_AC-" class="1">
 <segment>
 <wire x1="205.74" y1="101.6" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -11176,6 +11173,12 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="J5" gate="JACK" pin="+"/>
 <pinref part="B1" gate="1" pin="AC1"/>
 <wire x1="177.8" y1="91.44" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<label x="187.96" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<label x="135.89" y="138.43" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="135.89" y1="142.748" x2="135.89" y2="138.684" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="1">
@@ -11183,12 +11186,12 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="177.8" y1="116.84" x2="195.58" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="116.84" x2="208.28" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="116.84" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="116.84" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
 <junction x="195.58" y="116.84"/>
-<pinref part="J5" gate="JACK" pin="CDN"/>
-<wire x1="209.55" y1="104.14" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="B1" gate="1" pin="AC2"/>
 <wire x1="177.8" y1="116.84" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="J5" gate="JACK" pin="-"/>
+<wire x1="209.55" y1="106.68" x2="208.28" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="1">
@@ -11201,10 +11204,10 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <wire x1="157.48" y1="109.22" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <junction x="157.48" y="109.22"/>
-<pinref part="IC1" gate="A1" pin="VI"/>
+<pinref part="IC1-D24V5F5" gate="A1" pin="VI"/>
 </segment>
 </net>
-<net name="V_AC" class="0">
+<net name="V_AC+" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -11262,6 +11265,13 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <label x="128.27" y="147.32" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="6"/>
 <wire x1="128.27" y1="153.67" x2="128.27" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A2" class="1">
+<segment>
+<pinref part="J3" gate="G$1" pin="9"/>
+<wire x1="135.89" y1="153.67" x2="135.89" y2="152.908" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
