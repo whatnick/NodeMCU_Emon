@@ -10963,7 +10963,17 @@ http://dangerousprototypes.com</description>
 <segment>
 <label x="161.29" y="152.4" size="1.778" layer="95" rot="R270" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="4"/>
-<wire x1="161.29" y1="157.48" x2="161.29" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="157.48" x2="161.29" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J7" gate="G$1" pin="SS1"/>
+<wire x1="161.29" y1="154.94" x2="161.29" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="162.56" x2="144.78" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="154.94" x2="161.29" y2="154.94" width="0.1524" layer="91"/>
+<junction x="161.29" y="154.94"/>
+<pinref part="J7" gate="G$1" pin="SS2"/>
+<wire x1="165.1" y1="162.56" x2="167.64" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="162.56" x2="167.64" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="154.94" x2="161.29" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EN" class="0">
