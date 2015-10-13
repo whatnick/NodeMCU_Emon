@@ -10860,7 +10860,7 @@ http://dangerousprototypes.com</description>
 <instance part="R5" gate="G$1" x="135.89" y="147.828" rot="R270"/>
 <instance part="J6" gate="G$1" x="223.52" y="132.08"/>
 <instance part="J7" gate="G$1" x="157.48" y="162.56" rot="R90"/>
-<instance part="B2" gate="G$1" x="177.8" y="104.14"/>
+<instance part="B2" gate="G$1" x="177.8" y="104.14" rot="MR0"/>
 <instance part="J4" gate="J" x="213.36" y="104.14" rot="R180"/>
 </instances>
 <busses>
@@ -10942,7 +10942,6 @@ http://dangerousprototypes.com</description>
 <wire x1="124.46" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC1-D24V5F5" gate="A1" pin="GND"/>
 <wire x1="142.24" y1="93.98" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="104.14" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="-"/>
@@ -10953,7 +10952,8 @@ http://dangerousprototypes.com</description>
 <wire x1="146.05" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <junction x="146.05" y="93.98"/>
-<pinref part="B2" gate="G$1" pin="+"/>
+<pinref part="B2" gate="G$1" pin="-"/>
+<wire x1="182.88" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="118.11" y="146.05" size="1.778" layer="95" rot="R270" xref="yes"/>
@@ -11244,7 +11244,6 @@ http://dangerousprototypes.com</description>
 </net>
 <net name="N$4" class="1">
 <segment>
-<wire x1="172.72" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="104.14" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="165.1" y1="109.22" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
@@ -11252,7 +11251,8 @@ http://dangerousprototypes.com</description>
 <wire x1="157.48" y1="109.22" x2="152.4" y2="109.22" width="0.1524" layer="91"/>
 <junction x="157.48" y="109.22"/>
 <pinref part="IC1-D24V5F5" gate="A1" pin="VI"/>
-<pinref part="B2" gate="G$1" pin="-"/>
+<pinref part="B2" gate="G$1" pin="+"/>
+<wire x1="165.1" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_AC+" class="0">
