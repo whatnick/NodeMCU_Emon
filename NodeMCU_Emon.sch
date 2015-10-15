@@ -10764,10 +10764,10 @@ General Instrument, Semikron, Diotec, Fagor&lt;p&gt;
 <part name="J5" library="Seeed-OPL-Connector" deviceset="CONN-POWER-JACK-2.1MM(DC-005)" device="" value="DC-005"/>
 <part name="R2" library="resistor" deviceset="R-EU_" device="0204/7" value="100K"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="0204/7" value="10K"/>
-<part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="330R"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="100R"/>
 <part name="X1" library="adafruit" deviceset="STEREOJACK" device=""/>
-<part name="C1" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="10uF"/>
-<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="100uF"/>
+<part name="C1" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="100uF"/>
+<part name="C2" library="adafruit" deviceset="CPOL-US" device="TT2D4" value="10uF"/>
 <part name="IC1-D24V5F5" library="adafruit" deviceset="78*" device="T" technology="05"/>
 <part name="B1" library="rectifier" deviceset="B-DIL" device=""/>
 <part name="U$1" library="Power or GND " deviceset="GND_POWER" device=""/>
